@@ -6,18 +6,21 @@ import { AppComponent } from './app.component';
 import { OneComponentComponent } from './one-component/one-component.component';
 import { TwoComponentComponent } from './two-component/two-component.component';
 import { UserService } from './service/user.service';
+import { CreateComponentComponent } from './create-component/create-component.component';
+import { EmployeeService } from './service/employee.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     OneComponentComponent,
-    TwoComponentComponent
+    TwoComponentComponent,
+    CreateComponentComponent
   ],
   imports: [
     BrowserModule,
     FormsModule
   ],
-  providers: [UserService],
+  providers: [UserService, EmployeeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
