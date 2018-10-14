@@ -1,9 +1,5 @@
-<p>
-  create-component works!
-</p>
+<label>ID</label><input class="form-control" [(ngModel)]="id" type="text">
+<label>Name</label><input class="form-control" [(ngModel)]="name" type="text">
+<label>Designation</label><input class="form-control" [(ngModel)]="designation" type="text">
 
-<label>ID</label><input [(ngModel)]="id" type="text">
-<label>Name</label><input [(ngModel)]="name" type="text">
-<label>Designation</label><input [(ngModel)]="designation" type="text">
-
-<button (click)="doAdd()">Add</button>
+<button class="btn btn-default" (click)="doAdd()">Add</button>

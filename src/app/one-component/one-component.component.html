@@ -1,22 +1,22 @@
-<p>
-  User: {{ user }}
-</p>
+<div class="col-xs-3">
+  <p>
+    User: {{ user }}
+  </p>
 
-<table>
-  <thead>
-    <th>ID</th>
-    <th>Name</th>
-    <th>Designation</th>
-  </thead>
-  <tbody>
-    <tr *ngFor="let item of employeeList">
-      <td>{{ item.id }}</td>
-      <td>{{ item.name }}</td>
-      <td>{{ item.designation }}</td>
-    </tr>
-  </tbody>
-</table>
-<input [(ngModel)]='newUser'>
-<button (click)="doChange()">Change</button>
-
-
+  <table class="table table-striped">
+    <thead>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Designation</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of employeeList">
+        <td>{{ item.id }}</td>
+        <td>{{ item.name }}</td>
+        <td>{{ item.designation }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <input class="form-control" [(ngModel)]='newUser'>
+  <button class="btn btn-default" (click)="doChange()">Change</button>
+</div>
